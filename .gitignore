@@ -1,40 +1,85 @@
+# ===========================
 # Dependencies
-node_modules/
+# ===========================
+**/node_modules/
 
-# Build
-dist/
-build/
+# ===========================
+# Environment Variables
+# ===========================
+**/.env
+**/.env.*
+!.env.example
 
+# ===========================
+# Build Output
+# ===========================
+**/dist/
+**/build/
+**/out/
+**/release/
+
+# ===========================
+# Database
+# ===========================
+*.db
+*.sqlite
+*.sqlite3
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# ===========================
 # Logs
+# ===========================
+*.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
 
-# Environment variables
-.env
-.env.*
-
-# Database
-*.db
-database/*.db
-
-# Electron build
-release/
-out/
-
+# ===========================
 # Vite
+# ===========================
 .vite/
 
-# OS files
-.DS_Store
-Thumbs.db
+# ===========================
+# Electron
+# ===========================
+electron-builder.yml
+*.blockmap
+*.exe
+*.dmg
+*.AppImage
+*.deb
 
+# ===========================
+# Coverage
+# ===========================
+coverage/
+
+# ===========================
+# Cache
+# ===========================
+.cache/
+.temp/
+.tmp/
+
+# ===========================
 # IDE
+# ===========================
 .vscode/
 .idea/
 
-# Coverage
-coverage/
+# ===========================
+# OS Files
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Misc
-*.log
+# ===========================
+# Optional Local AI Models
+# (Remove if you intentionally
+# store models inside project)
+# ===========================
+models/
+*.gguf
