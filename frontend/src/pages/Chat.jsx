@@ -1,5 +1,11 @@
+import MainLayout from "../layouts/MainLayout";
+
 function Chat() {
-  return <h1>Chat</h1>;
+  return (
+    <MainLayout>
+      <h1 className="text-3xl font-bold">Chat</h1>
+    </MainLayout>
+  );
 }
 
 export default Chat;

@@ -1,5 +1,11 @@
+import MainLayout from "../layouts/MainLayout";
+
 function Privacy() {
-  return <h1>Privacy</h1>;
+  return (
+    <MainLayout>
+      <h1 className="text-3xl font-bold">Privacy</h1>
+    </MainLayout>
+  );
 }
 
 export default Privacy;

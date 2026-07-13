@@ -1,5 +1,11 @@
+import MainLayout from "../layouts/MainLayout";
+
 function Memory() {
-  return <h1>Memory</h1>;
+  return (
+    <MainLayout>
+      <h1 className="text-3xl font-bold">Memory</h1>
+    </MainLayout>
+  );
 }
 
 export default Memory;

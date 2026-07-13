@@ -1,5 +1,11 @@
+import MainLayout from "../layouts/MainLayout";
+
 function Tasks() {
-  return <h1>Tasks</h1>;
+  return (
+    <MainLayout>
+      <h1 className="text-3xl font-bold">Tasks</h1>
+    </MainLayout>
+  );
 }
 
 export default Tasks;
