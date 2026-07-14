@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const userRoute = require("./routes/userRoutes");
 
 const app = express();
 
@@ -12,5 +13,5 @@ app.get("/api/health", (req, res) => {
     message: "Luna Backend Running 🚀",
   });
 });
-
+app.get("/user",UserRoute);
 module.exports = app;
