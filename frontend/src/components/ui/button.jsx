@@ -1,4 +1,3 @@
-"use client";
 import { cva } from "class-variance-authority";
 import { Button as ButtonPrimitive, Link as LinkPrimitive } from "react-aria-components";
 
